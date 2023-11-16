@@ -21,7 +21,7 @@ int16_t v[MOTOR_NUM] = {0};
 
 void callback(const sensor_msgs::Joy::ConstPtr& msg) {
     //-1.0 <= vx,vy <= 1.0
-    vx = -msg->axes[0], vy = msg->axes[1], ang = -msg->axes[2];
+    vx = -msg->axes[2], vy = msg->axes[3], ang = -msg->axes[0];
     
 }
 
